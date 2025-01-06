@@ -1,0 +1,193 @@
+/* Reset and basic styling */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1c06e2, #9e9ec4);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    flex-direction: column;
+    transition: background-color 0.5s ease;  /* Smooth transition for color change */
+}
+
+/* Heading Style */
+.game-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: -webkit-linear-gradient(#d44186, #ee0979);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+/* Styling for selection container */
+.selection-container {
+    text-align: center;
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 3rem;
+    background: linear-gradient(135deg, #d2dd3d, #e7d959);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+}
+
+.name-input {
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center;  
+    gap: 10px;  
+}
+
+.name-input label {
+    font-size: 1.1rem;
+    margin-right: 10px; 
+}
+
+.name-input input {
+    padding: 10px;
+    font-size: 1rem;
+    width: 150px; 
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #fff;
+}
+
+/* Mode Button */
+.mode-btn {
+    padding: 1rem 2rem;
+    margin: 10px;
+    background: linear-gradient(135deg, #c715eb, #ee0979);
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.mode-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #d3723a, #269176);
+}
+
+/* Game Container */
+.game-container {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.game-container.visible {
+    display: flex;
+}
+
+.title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    background: -webkit-linear-gradient(#ffffff, #d684ac);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.score {
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.p-count, .c-count {
+    font-size: 1rem;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10PX 24PX;
+    border-radius: 1000px;
+}
+
+/* Options buttons */
+.options {
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.rock, .paper, .scissor {
+    padding: 0.8rem;
+    width: 100px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #d3ccd3, #7b68e2);
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.rock:hover, .paper:hover, .scissor:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #c763e0, #7e93da);
+}
+
+/* Result display */
+.result {
+    margin-top: 20PX;
+    font-size: 0.9REM;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 9PX;
+    border-radius: 7px;
+}
+
+.movesleft {
+    font-size: 1.5rem;
+    margin-top: 40px;
+}
+
+/* Footer - Designed By Vaishnavi */
+.footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    color: #fff;
+    font-style: italic;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Reload Button */
+.reload {
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.reload:hover {
+    background: linear-gradient(135deg, #ffc371, #ff5f6d);
+    transform: scale(1.1);
+}
